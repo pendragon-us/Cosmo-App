@@ -96,21 +96,26 @@ class SignIn extends StatelessWidget {
                         ),
 
                         //sign in
-                        Container(
-                          margin: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                          height: 60,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Color(0xffDCA47C)
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Sign In',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushReplacementNamed(context, '/dashboard');
+                          },
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                            height: 60,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Color(0xffDCA47C)
+                            ),
+                            child: Center(
+                              child: Text(
+                                'Sign In',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20
+                                ),
                               ),
                             ),
                           ),

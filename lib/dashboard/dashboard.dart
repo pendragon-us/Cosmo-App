@@ -166,7 +166,7 @@ class _DashboardState extends State<Dashboard> {
                             Expanded(
                               child: GestureDetector(
                                 onTap: () {
-                                  Navigator.pushNamed(context, '/apply-lipstick');
+                                  Navigator.pushNamed(context, '/apply-foundation');
                                 },
                                 child: Material(
                                   elevation: 10,
